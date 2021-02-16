@@ -1,5 +1,6 @@
 package com.ar4t1c.mcmod1.block;
 
+import com.ar4t1c.mcmod1.AFM;
 import com.ar4t1c.mcmod1.util.Registration;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -22,13 +23,18 @@ public class ModBlocks
             () -> new Block(AbstractBlock.Properties.create(Material.IRON)
             .hardnessAndResistance(3f, 50f).sound(SoundType.ANCIENT_DEBRIS)));
 
+    public static final RegistryObject<Block> RAW_COMPOUND = register("raw_compound",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .hardnessAndResistance(1f, 1f).sound(SoundType.STONE)));
+
+
     public static void register() { }
 
     private static <T extends Block>RegistryObject<T> register(String name, Supplier<T> block)
     {
         RegistryObject<T> toReturn = Registration.BLOCKS.register(name, block);
         Registration.ITEMS.register(name, () -> new BlockItem(toReturn.get(),
-                new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
+                new Item.Properties().group(AFM.AFM)));
         return toReturn;
     }
 }

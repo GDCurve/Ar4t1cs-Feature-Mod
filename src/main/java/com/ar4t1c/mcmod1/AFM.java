@@ -5,6 +5,8 @@ import com.ar4t1c.mcmod1.item.ModItems;
 import com.ar4t1c.mcmod1.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,6 +28,14 @@ import java.util.stream.Collectors;
 public class AFM
 {
     public static final String MOD_ID = "mcmod1";
+
+    public static final ItemGroup AFM = new ItemGroup("AFM")
+    {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModItems.COMPOUND.get());
+        }
+    };
 
 
     // Directly reference a log4j logger.
@@ -54,7 +64,7 @@ public class AFM
     private void setup(final FMLCommonSetupEvent event)
     {
         // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
+
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
 
     }

@@ -1,6 +1,8 @@
 {
   "item.mcmod1.compound": "Compound",
   "block.mcmod1.compound_block": "Compound Block",
-  "block.mcmod1.compressed_compound_block": "Compressed Compound Block"
+  "block.mcmod1.compressed_compound_block": "Compressed Compound Block",
+  "itemGroup.AFM": "AFM",
+  "block.mcmod1.raw_compound": "Raw Compound"
 
 }

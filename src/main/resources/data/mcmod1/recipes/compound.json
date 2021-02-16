@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "",
+  "ingredients":
+          [
+            {"item": "mcmod1:compound_block"}
+          ],
+  "result":
+  {
+    "item": "mcmod1:compound",
+    "count": 9
+  }
+}
