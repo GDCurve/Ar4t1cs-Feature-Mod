@@ -3,6 +3,12 @@
   "block.mcmod1.compound_block": "Compound Block",
   "block.mcmod1.compressed_compound_block": "Compressed Compound Block",
   "itemGroup.AFM": "AFM",
-  "block.mcmod1.raw_compound": "Raw Compound"
-
+  "block.mcmod1.raw_compound": "Raw Compound",
+  "item.mcmod1.resin": "Resin",
+  "item.mcmod1.graphite": "Graphite",
+  "item.mcmod1.graphene": "Graphene",
+  "item.mcmod1.mars_core_fragment": "Mars Core Fragment",
+  "item.mcmod1.moon_core_fragment": "Moon Core Fragment",
+  "item.mcmod1.soil_bag": "Bag of Soil",
+  "item.mcmod1.astrominium": "Astrominium"
 }

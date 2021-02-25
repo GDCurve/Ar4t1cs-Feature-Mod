@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mcmod1:item/moon_core_fragment"
+  }
+
+}
